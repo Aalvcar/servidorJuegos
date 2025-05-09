@@ -1,10 +1,8 @@
-# Usa una imagen base que tenga Java
+# Usa una imagen base con Java
 FROM openjdk:17-jdk-slim
 
-# Establece el directorio de trabajo
-WORKDIR /app
+# Copiar el archivo JAR al contenedor en el directorio raíz ( / )
+COPY dist/Alvarez_Cardenas_Antonio_Tarea4PSP.jar /Alvarez_Cardenas_Antonio_Tarea4PSP.jar
 
-# Copia el archivo JAR al contenedor (asegúrate de que la ruta sea correcta)
-COPY dist/Alvarez_Cardenas_Antonio_Tarea4PSP.jar ./Alvarez_Cardenas_Antonio_Tarea4PSP.jar
 # Comando para ejecutar el archivo JAR
-CMD ["java", "-jar", "/app/Alvarez_Cardenas_Antonio_Tarea4PSP.jar"]
+CMD ["java", "-jar", "/Alvarez_Cardenas_Antonio_Tarea4PSP.jar"]
