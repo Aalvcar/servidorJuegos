@@ -2,7 +2,7 @@
 FROM openjdk:17-jdk-slim
 
 # Copia tu archivo JAR al contenedor
-COPY dist/Alvarez_Cardenas_Antonio_Tarea4PSP.jar /app/Alvarez_Cardenas_Antonio_Tarea4PSP.jar
+COPY dist/Alvarez_Cardenas_Antonio_Tarea4PSP.jar
 
 # Establece el directorio de trabajo
 WORKDIR /app
