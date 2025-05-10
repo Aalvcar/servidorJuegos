@@ -11,7 +11,7 @@
 
     <property name="src.dir" location="src"/>
     <property name="build.dir" location="build"/>
-    <property name="dist.dir" location="dist/dist"/>
+    <property name="dist.dir" location="dist"/>
     <property name="lib.dir" location="lib"/>
 
     <path id="classpath">
